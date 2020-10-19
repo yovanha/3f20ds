@@ -1,4 +1,4 @@
-//numeros primos
+//Numeros primos
 var i = 1;
 var primo = 2;
 var esPrimo = 1;
