@@ -1,7 +1,12 @@
 //sen x = x - x^3/3! + ... -
-var sen;
+var y;
+var x;
 var n = 10;
 for (let i = 1; i <= n; i++){
-sen = i - ((Math.pow(i,3))/(3*2*1));
-console.log(sen);
+    y = y+((-1)^i)*(x^(2*i+1))/factorial(2*i+1)
 }
+console.log(y);
+//sin(x):
+//for i=0:10,
+//y = y+((-1)^i)*(x^(2*i+1))/factorial(2*i+1);
+//end
