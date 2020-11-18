@@ -5,7 +5,7 @@ var rl = readline.createInterface({
 });
 var n;
 var resultado = 0;
-rl.question('Cantidad de números aleatorios ' , (n) => {
+rl.question('Suma de número armónico ' , (n) => {
 for (let i = 1; i<=n; i++){
     resultado += 1/i
 }
