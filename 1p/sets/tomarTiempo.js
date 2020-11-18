@@ -3,7 +3,7 @@ var nombreBase = "name"
 var n = 100000
 var tiempo = new Date().getTime();
 while(nombresSets.size<n){
-    var numero = (Math.floor(Math.random() * (100001 - 1) + 1)).toString()
+    var numero = (Math.floor(Math.random() * n)).toString()
     var nombreCompleto = nombreBase + numero
     nombresSets.add(nombreCompleto)
 }
