@@ -14,7 +14,6 @@ rl.question('Valor de x: ' , (xx) => {
         for (let i = 1; i <=n; i++) {
             var e= Math.pow(x,i);
             var d= e/i;
-            
             if (signo=="+") {
                 signo="-";
             }else{
@@ -32,7 +31,6 @@ rl.question('Valor de x: ' , (xx) => {
                 resultado= a+d
                 a=resultado
             }
-
         }
         console.log(frase);
         console.log("Resultado: "+resultado);
