@@ -3,7 +3,7 @@ var nombreBase = "nombre"
 var tiempo = new Date().getTime();
 var n = 100000
 while(nombresMap.size<n){
-    var numero = (Math.floor(Math.random() * (100001 - 1) + 1)).toString()
+    var numero = (Math.floor(Math.random() * n)).toString()
     var nombreCompleto = nombreBase + numero
     nombresMap.set(numero, nombreCompleto)
     numero++
