@@ -4,4 +4,4 @@ let s = [3,1,4,2,3];
             k.concat(k.map(d => [y].concat(d))), [[]]);
     }
 console.log(potencia(s));
-console.log("Complejidad computacional: función cuadrátical");
+console.log("Complejidad computacional: función exponencial");
