@@ -1,29 +1,20 @@
-function permute(array) {
-	Array.prototype.swap = function (index, otherIndex) {
-		var valueAtIndex = this[index]
-
-		this[index] = this[otherIndex]
-		this[otherIndex] = valueAtIndex
-	}
-
-	var result = [array.slice()]
-
-	, length = array.length
-
-	for (var i = 1, heap = new Array(length).fill(0)
-		; i < length
-	;)
-		if (heap[i] < i) {
-			array.swap(i, i % 2 && heap[i])
-			result.push(array.slice())
-			heap[i]++
-			i = 1
-		} else {
-			heap[i] = 0
-			i++
-		}
-
-	return result
+var s = [31,1,4,2,32]
+var perm1
+function permutaciones(n){
+        perm1 = [];
+    let perm = (a, p = []) =>{
+        if (!a.length) {
+            perm1.push(p);
+            return;
+        }
+        for(let i in a) {
+            let curr = a.slice();
+            let nx = curr.splice(i,1);
+            perm(curr, p.concat(nx));
+        }
+    } 
+    perm(n);
+    return perm1;
 }
-
-console.log(permute([31,1,4,2,32]))
+console.log(permutaciones(s));
+console.log("Complejidad computacional: función cuadrática");
