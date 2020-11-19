@@ -8,3 +8,4 @@ elementos.forEach((value,index)=>{
   repetidos.push(value);
 });
 console.log(repetidos);
+//su complejidad es de n2

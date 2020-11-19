@@ -6,3 +6,4 @@ for( var i = 0; i < s.length; i++ ){
 }
 avg = sum/s.length;
 console.log(avg);
+//su complejidad es de n ya que el programa incluye a todos lo valores para su función 
